@@ -9,7 +9,14 @@ html{
 }
 body{
     margin: 0rem;
-    background-color: black;
+    background-color: white;
+    font-family: Roboto Mono;
+    font-weight: normal;
+}
+button{
+  width: 100vw;
+  height: 20vh;
+  background-color: white;
 }
 /*Header*/
 
@@ -19,7 +26,8 @@ header{
     width: 70px;
     height: 100vh;
     float: right;
-    z-index: 1; 
+    z-index: 2;
+
 }
 /*Button menu*/
 .iconMenu{
@@ -40,7 +48,7 @@ svg{
     font-size: 30px;
     text-align: center;
   }
-input{
+.inputMenu{
     margin-top: -26px;
     right: 0;
     width: 70px;
@@ -52,7 +60,7 @@ input{
     background: black; 
 }
   li:hover{
-    filter: opacity(.8);
+    filter: opacity(.3);
     transition:all .5s ease-in-out;
 }
   .menu .fa-bars, .menu .fa-times {
@@ -86,7 +94,6 @@ input{
   }
   
   li{
-    font-family: Roboto Mono;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +104,7 @@ input{
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #153B22;
+  background-color: black;
 }
 .texture{
   background-image: url(img/miceliosB.png);
@@ -133,32 +140,34 @@ input{
   font-size: 30px;
   color: white;
 }
-main{
-  
-}
 /*About me*/
 .about{
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: auto;
   background-image: url("img/fondcode.jpeg");
   background-size: 300vh;
-  background-position: -60rem 1rem;
-  background-repeat: no-repeat;
+  background-position: -50rem 1rem;
+  background-repeat: repeat-y;
+}
+.container1{
+  position: relative;
+  margin-top: -70vh;
 }
 .rectBlur{
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 4px 7px 16px 1px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur( 10px);
   margin: 1rem;
-  padding-bottom: 1rem;
-  height: auto;
+  padding-bottom: 0.5rem;
+  height: 70vh;
 }
 .lines{
   display: flex;
   flex-direction: row;
+  padding: 0%;
 }
 .border{
-  backdrop-filter: blur(0px);
   width: 12vw;
   height: 5px;
   margin-top: 1rem;
@@ -168,24 +177,140 @@ main{
   margin-left: -3vw;
 }
 .R{
-  width: 36vw;
+  width: 40vw;
   margin-right: -2rem;
   margin-left: 2px;
 }
 .paraph3{
-  backdrop-filter: blur(0px);
   font-family: Special Elite;
   color: #FFF490;
   font-size: 40px;
 }
 .paraph4{
-  backdrop-filter: blur(0px);
-  font-family: Roboto Mono;
   font-size: 20px;
   color: #FFF490;
   text-align: justify;
-  margin: 1.5rem;
+  margin: 2.5rem;
   margin-top: 0.5rem;
 }
- /*Estilos para JavaScript*/
+/*Cards*/
+ .card{
+  height: 40vh; max-width: 50vh;
+  width: 70vh;
+  margin: 1.3rem;
+  background: linear-gradient(115.78deg, rgba(255, 244, 145, 0.37) 3.1%, rgba(255, 255, 255, 0.15) 54.17%);
+  box-shadow: 0px 4px 7px 19px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+/* Note: backdrop-filter has minimal browser support */
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 244, 145, 0.2);
+}
+.frontend{
+  backdrop-filter: blur(0px);
+}
+.imgcards{
+  display: block;
+  margin: auto;
+  margin-top: -15rem;
+  padding-top: 3rem;
+  width: 50vw;
+  opacity: 0.2;
+}
+.text{
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 1rem;
+  border:rgba(0, 0, 0, 0.7);
+}
+.paraph5{
+  font-size: 20px;
+  color: #FFF490;
+  text-align: justify;
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+.logosfront{
+  padding-left: 1rem;
+}
+.logosfront img{
+  width: 5.5vh;
+  margin: 2px;
+}
+.logosback{
+  padding-left: 0.7rem;
+  margin-top: -3vh;
+}
+.logosback img{
+  width: 4.5vh;
+  margin: 2px;
+}
+.back{
+  opacity: 0.15;
+  width: 70vw;
+  margin-top: -18rem;
+}
+.paraph6{
+  font-size: 20px;
+  color: #FFF490;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.logosothers{
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.3rem;
+  margin: 2rem;
+}
+.logosothers img{
+  width: 6vh;
+  margin: 6px;
+}
+/*Proyects*/
+.landing{
+  width: 100vw;
+  height: 27vh;
+}
+.imglanding{
+  width: 100vw;
+  
+}
+/*style JavaScript*/
+.style{
+  filter: blur(3px);
+}
+.tproy{
+  position: relative;
+  font-family: Special Elite;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FFF491;
+  text-shadow: 0px 4px 7px #FFF491;
+  text-align: center;
+  margin-top: -8rem;
+  z-index: 1;
+}
+.proyect{
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.imggif{
+  width: 100vw;
+  height:35vh;
+  margin-top: -12rem;
+  background: url("img/gif2.gif");
+  background-size: 90vw;
+  background-position: 1rem;
+  mix-blend-mode: difference;
+  background-repeat: no-repeat;
+}
+/*Contact*/
+
 

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Special+Elite&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
+    
     <title>Portfolio
     </title>
 </head>
@@ -18,7 +18,7 @@
 <body>
     <header id="header">
         <div class="menu" id="menu">
-            <input type="checkbox">
+            <input class="inputMenu" type="checkbox">
             <div class="iconMenu">
                 <svg width="49" height="33" viewBox="0 0 49 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.2633 28.1138H44.7633M4.76331 4.92218H44.7633H4.76331ZM4.76331 16.518H44.7633H4.76331Z"
@@ -28,9 +28,9 @@
             <nav>
                 <div class="list">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Proyects</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#proyects">Proyects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="texture"></div>
             <div class="fading">
                 <p class="paraph1">My name is Valentina. </p>
@@ -46,29 +46,116 @@
                 <img class="logoH" src="img/logo.png" alt="">
             </div>
         </section>
-        <section class="about">
-            <div class="fondcode">
-                <div class="rectBlur">
-                    <div class="lines">
-                        <div class="border L"></div>
-                        <h2 class="paraph3">About me</h2>
-                        <div class="border R"></div>
+        <section class="about" id="about">
+            <div class="rectBlur"></div>
+            <div class="container1">
+                <div class="lines">
+                    <div class="border L"></div>
+                    <h2 class="paraph3">About me</h2>
+                    <div class="border R"></div>
+                </div>
+                <p class="paraph4">
+                    I am a web developer based in Colombia. I have a great passion
+                    for animations and creating intuitive and dynamic user experiences.
+                    Well-organized person and problem solver.
+                    I am interested in the whole spectrum of websites and working on
+                    ambitious projects with positive people.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="frontend">
+                        <h2 class="text">Frontend</h2>
+                        <p class="paraph5">A graphical interface for the user to view and interact with the information
+                            digitally.</p>
+                        <div class="logosfront">
+                            <img src="img/HTML.png" alt="logo HTML">
+                            <img src="img/CSS.png" alt="logo CSS">
+                            <img src="img/JS.png" alt="logo JS">
+                            <img src="img/react.png" alt="logo react">
+                            <img src="img/typescript.png" alt="logo type">
+                            <img src="img/Angular.png" alt="logo Angular">
+                        </div>
                     </div>
-                    <p class="paraph4">
-                        I am a web developer based in Colombia. I have a great passion
-                        for animations and creating intuitive and dynamic user experiences.
-                        Well-organized person and problem solver.
-                        I am interested in the whole spectrum of websites and working on
-                        ambitious projects with positive people.
-                    </p>
-                   </div>
+                    <img class="imgcards" src="img/frontend.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="frontend">
+                        <h2 class="text">Backend</h2>
+                        <p class="paraph5">Capacity for innovation within the code to make the website more attractive.
+                        </p>
+                        <div class="logosback">
+                            <img src="img/mongodb.png" alt="logo mongodb">
+                            <img src="img/mysql.png" alt="logo mysql">
+                            <img src="img/python.png" alt="logo python">
+                            <img src="img/django.png" alt="logo django">
+                            <img src="img/tailwind.png" alt="logo ta">
+                            <img src="img/php.png" alt="logo php">
+                            <img src="img/laravel.png" alt="logo laravel">
+                        </div>
+                    </div>
+                    <img class="imgcards back" src="img/backend.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="frontend">
+                        <h2 class="text">Others</h2>
+                        <p class="paraph6">various skills</p>
+                        <div class="logosothers">
+                            <img src="img/photoshop.png" alt="logo mongodb">
+                            <img src="img/illustrator.png" alt="logo mysql">
+                            <img src="img/After.png" alt="logo python">
+                            <br>
+                            <img src="img/Clipstudiopaint.png" alt="logo django">
+                            <img src="img/Maya.png" alt="logo ta">
+                            <img src="img/Blender.png" alt="logo Blender">
+                        </div>
+                    </div>
+                    <img class="imgcards back" src="img/backend.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="proyects" id="proyects">
+            <div class="lines">
+                <div class="border L"></div>
+                <h2 class="paraph3">Proyects</h2>
+                <div class="border R"></div>
+            </div>
+            <div class="proyect" id="proyect">
+                <button id="removeStyleButton">
+                </button>
+                <div class="landing" >
+                    <img class="imglanding" id="blurLanding"  src="img/Landing.PNG" alt="">
+                    <div class="imggif">
+                    </div>
+                    <div class="tproy"><p >Landing Page</p></div>
                 </div>
         </section>
-
+        <section class="contact">
+            <div class="u-wrapper">
+              <div class="contact-content">
+                <form id="form" action="" class="form">
+                    <div class="lines">
+                        <div class="border L"></div>
+                        <h2 class="paraph3">Contact</h2>
+                        <div class="border R"></div>
+                    </div>
+                  <label for="name">Name<span>*</span></label>
+                  <input name="name" required type="text" id="name" placeholder="Juan">
+                  <label for="email">e-mail<span>*</span></label>
+                  <input name="email" type="text" id="email" required placeholder="@.com">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                  <button type="submit" class="btn primary full">enviar mensaje</button>
+                </form>
+                <a href="mailto:lauravalentina200102@gmail.com" id="emailSubmit">mail</a>
+              </div>
+            </div>
+          </section>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
