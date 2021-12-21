@@ -10,39 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Special+Elite&display=swap"
         rel="stylesheet">
-    
+
     <title>Portfolio
     </title>
 </head>
 
 <body>
     <header id="header">
-        <div class="menu" id="menu">
-            <input class="inputMenu" type="checkbox">
-            <div class="iconMenu">
-                <svg width="49" height="33" viewBox="0 0 49 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M27.2633 28.1138H44.7633M4.76331 4.92218H44.7633H4.76331ZM4.76331 16.518H44.7633H4.76331Z"
-                        stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
-            <nav>
-                <div class="list">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#proyects">Proyects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+        <div class="fixed" id="fixed">
+            <div class="menu-wrap" id="mennu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger" id="hamburguer">
+                    <div></div>
                 </div>
-            </nav>
+                <div class="menuD">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#proyects">Proyects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section class="home" id="home">
             <div class="texture"></div>
             <div class="fading">
-                <p class="paraph1">My name is Valentina. </p>
-                <p class="paraph2">I'm a web developer and photographer.</p>
+                <p class="paraph1">Hi! <br>
+                    I’m Valentina </p>
+                <p class="paraph2">Full stack web developer and<br> photographer.</p>
                 <img class="logoH" src="img/logo.png" alt="">
             </div>
         </section>
@@ -77,7 +79,7 @@
                             <img src="img/Angular.png" alt="logo Angular">
                         </div>
                     </div>
-                    <img class="imgcards" src="img/frontend.png" alt="">
+                    <!-- <img class="imgcards" src="img/frontend.png" alt=""> -->
                 </div>
                 <div class="card">
                     <div class="frontend">
@@ -94,7 +96,7 @@
                             <img src="img/laravel.png" alt="logo laravel">
                         </div>
                     </div>
-                    <img class="imgcards back" src="img/backend.png" alt="">
+                    <!--          <img class="imgcards back" src="img/backend.png" alt=""> -->
                 </div>
                 <div class="card">
                     <div class="frontend">
@@ -110,7 +112,7 @@
                             <img src="img/Blender.png" alt="logo Blender">
                         </div>
                     </div>
-                    <img class="imgcards back" src="img/backend.png" alt="">
+                    <img class="imgcards" src="" alt="">
                 </div>
             </div>
         </section>
@@ -120,40 +122,97 @@
                 <h2 class="paraph3">Proyects</h2>
                 <div class="border R"></div>
             </div>
-            <div class="proyect" id="proyect">
-                <button id="removeStyleButton">
-                </button>
-                <div class="landing" >
-                    <img class="imglanding" id="blurLanding"  src="img/Landing.PNG" alt="">
-                    <div class="imggif">
+            <div class="proyectsgrid">
+                <div class="proyect" id="proyect1">
+                    <div class="landing">
+                        <img class="imgproyect" id="blurLanding" src="img/Landing.PNG" alt="">
+                        <div class="imggif">
+                        </div>
+                        <div class="tproy">
+                            <a href="https://valentinarippe.github.io/Landing-Page-Sakura-Card-Captor/#inicio"
+                                style="text-decoration: none; color:black;">Landing Page</a>
+                        </div>
                     </div>
-                    <div class="tproy"><p >Landing Page</p></div>
                 </div>
-        </section>
-        <section class="contact">
-            <div class="u-wrapper">
-              <div class="contact-content">
-                <form id="form" action="" class="form">
-                    <div class="lines">
-                        <div class="border L"></div>
-                        <h2 class="paraph3">Contact</h2>
-                        <div class="border R"></div>
+                <div class="proyect" id="proyect2">
+                    <div class="landing">
+                        <img class="imgproyect" id="blur2" src="img/hangman.PNG" alt="">
+                        <div class="imggif">
+                        </div>
+                        <div class="tproy">
+                            <a href="https://valentinarippe.github.io/Juego-Ahorcado/"
+                                style="text-decoration: none; color:black;">Hangman</a>
+                        </div>
                     </div>
-                  <label for="name">Name<span>*</span></label>
-                  <input name="name" required type="text" id="name" placeholder="Juan">
-                  <label for="email">e-mail<span>*</span></label>
-                  <input name="email" type="text" id="email" required placeholder="@.com">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-                  <button type="submit" class="btn primary full">enviar mensaje</button>
-                </form>
-                <a href="mailto:lauravalentina200102@gmail.com" id="emailSubmit">mail</a>
-              </div>
+                </div>
+                <div class="proyect" id="proyect3">
+                    <div class="landing">
+                        <img class="imgproyect" id="blur3" src="img/tetris.PNG" alt="">
+                        <div class="imggif">
+                        </div>
+                        <div class="tproy">
+                            <a href="https://practical-wright-b7d057.netlify.app/"
+                                style="text-decoration: none; color:black;">Tetris</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
-    </main>
-    <footer>
+        </section>
+        <div class="lines">
+            <div class="border L"></div>
+            <h2 class="paraph3">Testimonials</h2>
+            <div class="border R"></div>
+        </div>
+        <section class="testimonials" id="testimonials">
+            <div>
+                <p class="text">"People nice working nice"</p>
+                <p class="text1">Juan</p>
+            </div>
+            <div class="imgtestimonial"></div>
+            <div>
+                <p class="text">
+                    "Valentina is a person who is always willing, always looking for ways to improve her projects,
+                    because she wants to grow as a person and as a developer."
+                </p>
+            </div>
 
+        </section>
+        <div class="lines">
+            <div class="border L"></div>
+            <h2 class="paraph3">Contact</h2>
+            <div class="border R"></div>
+        </div>
+        <section class="contact" id="contact">
+
+            <div class="u-wrapper">
+                <div class="contact-content">
+                    <form id="form" action="" class="form">
+                        <img class="logocard" src="img/logofooter.png" alt="">
+                        <label for="name"></label>
+                        <input name="name" required type="text" id="name" placeholder="Name">
+                        <label for="email"></label>
+                        <input name="email" type="text" id="email" required placeholder="E-mail">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" id="" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                        <button type="submit" class="btnSubmit">Submit</button>
+                        <a href="mailto:lauravalentina200102@gmail.com" id="emailSubmit">mail</a>
+                    </form>
+                </div>
+            </div>
+            <div class="icons">
+                <a class="icon" href="mailto:lauravalentina200102@gmail.com" id="emailSubmit"><img src="img/gmail.png"
+                        alt=""></a>
+                <a class="icon" href="https://www.linkedin.com/in/valentina-rippe/"><img src="img/Linkedin.png" alt=""></a>
+                <a class="icon" href="https://github.com/ValentinaRippe"><img src="img/github.png" alt=""></a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <img class="logocard" src="img/logofooter.png" alt="">
+        <p>@2021 Developed by Valentina</p>
     </footer>
     <script src="script.js"></script>
 </body>
