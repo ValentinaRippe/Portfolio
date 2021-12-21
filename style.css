@@ -194,7 +194,7 @@ header{
 .fading{
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height:100vh;
   margin-top: -100vh;
 }
 .logoH{
@@ -361,6 +361,13 @@ header{
   opacity: 0.2;
 }
 .text{
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 1rem;
+  border:rgba(0, 0, 0, 0.7);
+}
+.text2{
   text-align: center;
   font-size: 24px;
   color: #FFFFFF;
@@ -588,6 +595,12 @@ footer p{
     width: 0px;
 }
 /*home*/
+.fading{
+  position: relative;
+  width: 100vw;
+  height:90vh;
+  margin-top: -110vh;
+}
 .paraph1{
   font-size: 70px;
   margin-top: 10rem;
@@ -703,6 +716,9 @@ footer p{
   .proyect3{
     grid-column-start: 2;
       grid-column-end: 2;
+  }
+  .text2{
+    width: 60vw;
   }
  /*form*/
  .u-wrapper{
